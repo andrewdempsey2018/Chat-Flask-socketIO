@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+
+    <!-- must import socket.io itself (seperate from Flask-socketIO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"
+        integrity="sha512-2ho+gY0H62N4Z9oxD422L2ZYXiOMq9l+Aub1QNz4Z4UDOtDVxz4vk6O6R3Hqqc9Y7qSvZFl7cy3+eZ/ITnUrLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <h1>Chat</h1>
+
+    <div id="message_area"><p>Messages will appear here</p></div>
+
+    <div id="form_area">
+        <form action="" method="post" id="form">
+            <input type="text" class="username" name="username" placeholder="Enter a username">
+            <input type="text" class="messageField" name="messageField" placeholder="Enter your message">
+            <input type="submit" id="sendButton" value="Send">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+
+</body>
+
+</html>
