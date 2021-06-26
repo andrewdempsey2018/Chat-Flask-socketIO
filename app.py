@@ -14,7 +14,7 @@ def index():
     return render_template('index.html')
 
 # server receives messages through the message 'route'
-# sends the message to ALL clients connected...
+# sends the message to ALL clients connected....
 @socketio.on('message')
 def handle_message(data):
     print('received message: ' + data)
