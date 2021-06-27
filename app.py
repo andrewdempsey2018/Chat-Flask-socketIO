@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__)
 
-app.secret_key = '23klernkl3ke23k'
+app.secret_key = os.environ.get("SECRET_KEY")
 
 socketio = SocketIO(app)
 

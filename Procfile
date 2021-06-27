@@ -1,2 +1,1 @@
-web:gunicorn -k flask_sockets.worker app:app
-
+web: gunicorn -w 1 --threads 100 app:app
