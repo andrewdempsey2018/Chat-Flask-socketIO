@@ -5,6 +5,7 @@ colorama==0.4.4
 Flask==2.0.1
 Flask-SocketIO==5.1.0
 gevent==21.1.2
+gevent-websocket==0.10.1
 greenlet==1.1.0
 gunicorn==20.1.0
 itsdangerous==2.0.1

@@ -3,9 +3,7 @@ from flask_socketio import SocketIO
 from werkzeug import debug
 import os
 
-import redis
 import gevent
-from flask_sockets import Sockets
 
 app = Flask(__name__)
 
