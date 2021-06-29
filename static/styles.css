@@ -1,11 +1,18 @@
+#main_container {
+    width: 400px;
+}
+
 #message_area {
     overflow-y: scroll;
     height: 400px;
-    width: 400px;;
     background-color: rgb(155, 243, 169);
     font-size: large;
 }
 
-#form_area {
-    margin-top: 20px;
+#username, #messageField, #sendButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 60%;
 }

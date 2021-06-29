@@ -19,18 +19,26 @@
 
     <h1>Chat</h1>
 
-    <div id="message_area"><p>Messages will appear here</p></div>
+    <div id="main_container">
 
-    <div id="form_area">
-        <form action="" method="post" id="form">
-            <input type="text" class="username" name="username" placeholder="Enter a username">
-            <input type="text" class="messageField" name="messageField" placeholder="Enter your message">
+        <div id="message_area">
+            <p>Messages will appear here</p>
+        </div>
+
+        <div>
+            <input type="text" id="username" name="username" placeholder="Enter a username">
+        </div>
+
+        <div>
+            <textarea type="text" id="messageField" name="messageField" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div>
             <input type="submit" id="sendButton" value="Send">
-        </form>
+        </div>
+
+        <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
     </div>
-
-    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
-
 </body>
 
 </html>
