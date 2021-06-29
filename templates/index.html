@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 
     <!-- must import socket.io itself (seperate from Flask-socketIO -->
@@ -20,25 +20,21 @@
     <h1>Chat</h1>
 
     <div id="main_container">
-
         <div id="message_area">
             <p>Messages will appear here</p>
         </div>
-
         <div>
             <input type="text" id="username" name="username" placeholder="Enter a username">
         </div>
-
         <div>
             <textarea type="text" id="messageField" name="messageField" placeholder="Enter your message"></textarea>
         </div>
-
         <div>
             <input type="submit" id="sendButton" value="Send">
         </div>
-
-        <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
     </div>
+
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 
 </html>
